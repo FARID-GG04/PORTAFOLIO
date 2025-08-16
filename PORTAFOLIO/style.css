@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 2px solid #1FE0E0;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #1FE0E0;
+    text-shadow: 0 0 10px #1FE0E0, 0 0 20px #1FE0E0, 0 0 30px #FAFAFA;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1FE0E0;
+    text-shadow: 0 0 5px #1FE0E0, 0 0 10px #1FE0E0;
+}
+
+section {
+    padding: 50px 20px;
+    border-bottom: 1px solid #1FE0E0;
+}
+
+h2 {
+    color: #1FE0E0;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #1FE0E0;
+}
+
+.proyecto {
+    background-color: #111;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1FE0E0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.proyecto:hover {
+    background-color: #1A1A1A;
+    box-shadow: 0 0 15px #1FE0E0;
+}
+
+.proyecto h3 {
+    color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    margin-bottom: 10px;
+}
+
+.proyecto a {
+    color: #1FE0E0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.proyecto a:hover {
+    text-shadow: 0 0 5px #1FE0E0;
+}
+
+.proyecto img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #1FE0E0;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-shadow: 0 0 5px #1FE0E0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    border-top: 2px solid #1FE0E0;
+    color: #FAFAFA;
+}
