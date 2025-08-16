@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "titulo": "Proyecto 1",
+      "descripcion": "Descripción breve del proyecto 1.",
+      "enlace": "#",
+      "imagen": "images/proyecto1.jpg"
+    },
+    {
+      "titulo": "Proyecto 2",
+      "descripcion": "Descripción breve del proyecto 2.",
+      "enlace": "#",
+      "imagen": "images/proyecto2.jpg"
+    }
+  ]
+}
