@@ -1,40 +1,51 @@
 backend:
-  name: github
-  repo: TU_USUARIO/mi-portafolio
+  name: git-gateway
   branch: main
 
 media_folder: "images"
-public_folder: "images"
+public_folder: "/images"
 
 collections:
-  - name: "config" 
+  - name: "config"
     label: "Configuración"
     files:
-      - file: "data/config.yml"
+      - file: "data/config.json"
         label: "Datos principales"
         name: "config"
+        format: "json"
         fields:
-          - {label: "Nombre", name: "nombre", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "LinkedIn", name: "linkedin", widget: "string"}
-          - {label: "GitHub", name: "github", widget: "string"}
+          - { label: "Nombre", name: "nombre", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "LinkedIn (URL)", name: "linkedin", widget: "string" }
+          - { label: "GitHub (URL)", name: "github", widget: "string" }
 
-  - name: "proyectos"
-    label: "Proyectos"
-    folder: "data/proyectos"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Título", name: "titulo", widget: "string"}
-      - {label: "Descripción", name: "descripcion", widget: "text"}
-      - {label: "Enlace", name: "enlace", widget: "string"}
-      - {label: "Imagen", name: "imagen", widget: "image"}
+  - name: "contenido"
+    label: "Contenido"
+    files:
+      - file: "data/proyectos.json"
+        label: "Proyectos"
+        name: "proyectos"
+        format: "json"
+        fields:
+          - label: "Proyectos"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Descripción", name: "descripcion", widget: "text" }
+              - { label: "Enlace", name: "enlace", widget: "string" }
+              - { label: "Imagen", name: "imagen", widget: "image" }
 
-  - name: "certificados"
-    label: "Certificados"
-    folder: "data/certificados"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Nombre", name: "nombre", widget: "string"}
-      - {label: "Enlace", name: "enlace", widget: "string"}
+      - file: "data/certificados.json"
+        label: "Certificados"
+        name: "certificados"
+        format: "json"
+        fields:
+          - label: "Certificados"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.nombre}}"
+            fields:
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Enlace", name: "enlace", widget: "string" }
